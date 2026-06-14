@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — myCashFlow</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #f9f9f7;
+      --surface: #ffffff;
+      --border: #e8e8e4;
+      --text: #1a1a1a;
+      --muted: #6b6b6b;
+      --accent: #1a1a1a;
+      --tag-bg: #f0f0ec;
+      --radius: 10px;
+      --max: 720px;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      padding: 0 20px 80px;
+    }
+
+    /* Header */
+    header {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 56px 0 40px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 40px;
+    }
+
+    .app-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 50px;
+      padding: 6px 14px 6px 8px;
+      margin-bottom: 24px;
+    }
+
+    .app-icon {
+      width: 28px;
+      height: 28px;
+      background: #1a1a1a;
+      border-radius: 7px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+    }
+
+    .app-badge span {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--muted);
+    }
+
+    h1 {
+      font-size: clamp(28px, 5vw, 38px);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+
+    .meta {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    /* Layout */
+    .content {
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+
+    /* Sections */
+    section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      margin-bottom: 16px;
+    }
+
+    .section-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-size: 15px;
+      font-weight: 600;
+      margin-top: 20px;
+      margin-bottom: 6px;
+    }
+
+    p {
+      font-size: 15px;
+      color: #333;
+      margin-bottom: 12px;
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+
+    li {
+      font-size: 15px;
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    /* Tag chips */
+    .chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .chip {
+      background: var(--tag-bg);
+      border: 1px solid var(--border);
+      border-radius: 50px;
+      padding: 4px 12px;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--muted);
+    }
+
+    /* Info row (titolare) */
+    .info-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .info-row:last-child { border-bottom: none; padding-bottom: 0; }
+    .info-row:first-child { padding-top: 0; }
+
+    .info-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--muted);
+      min-width: 140px;
+      padding-top: 1px;
+    }
+
+    .info-value {
+      font-size: 14px;
+      color: var(--text);
+    }
+
+    /* Rights list */
+    .rights-grid {
+      display: grid;
+      gap: 10px;
+      margin-top: 4px;
+    }
+
+    .right-item {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 12px;
+      background: var(--bg);
+      border-radius: 8px;
+    }
+
+    .right-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--accent);
+      border-radius: 50%;
+      margin-top: 6px;
+      flex-shrink: 0;
+    }
+
+    .right-item p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    /* Notice box */
+    .notice {
+      background: #f0f7ff;
+      border: 1px solid #cce0ff;
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin-top: 12px;
+    }
+
+    .notice p {
+      font-size: 13px;
+      color: #2a5298;
+      margin: 0;
+    }
+
+    /* Footer */
+    footer {
+      max-width: var(--max);
+      margin: 40px auto 0;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+
+    footer p {
+      font-size: 12px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    @media (max-width: 500px) {
+      .info-row { flex-direction: column; gap: 2px; }
+      .info-label { min-width: unset; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="app-badge">
+    <div class="app-icon">💸</div>
+    <span>myCashFlow</span>
+  </div>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Ultima modifica: 14 giugno 2026 &nbsp;·&nbsp; Versione 1.0</p>
+</header>
+
+<div class="content">
+
+  <!-- Titolare -->
+  <section>
+    <p class="section-label">Titolare del trattamento</p>
+    <div class="info-row">
+      <span class="info-label">Nome</span>
+      <span class="info-value">Alessandro Radice</span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">Email di contatto</span>
+      <span class="info-value"><a href="mailto:infomycashflow@gmail.com">infomycashflow@gmail.com</a></span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">Paese</span>
+      <span class="info-value">Italia</span>
+    </div>
+  </section>
+
+  <!-- Dati raccolti -->
+  <section>
+    <p class="section-label">Dati raccolti</p>
+    <h2>Cosa raccogliamo</h2>
+    <p>myCashFlow raccoglie solo i dati strettamente necessari al funzionamento dell'app e alla visualizzazione degli annunci pubblicitari.</p>
+
+    <h3>Dati inseriti dall'utente</h3>
+    <p>Nome scelto dall'utente durante il primo avvio. Questo dato è salvato esclusivamente sul dispositivo e non viene mai trasmesso a server esterni.</p>
+
+    <h3>Dati finanziari</h3>
+    <p>Tutte le transazioni, i budget, gli obiettivi di risparmio e le categorie inserite dall'utente sono archiviate localmente sul dispositivo tramite CoreData (framework Apple). Questi dati non lasciano mai il dispositivo e non vengono condivisi con terze parti.</p>
+    <div class="notice">
+      <p>📱 La disinstallazione dell'app comporta la cancellazione definitiva e irreversibile di tutti i dati finanziari salvati.</p>
+    </div>
+
+    <h3>Dati raccolti automaticamente (AdMob)</h3>
+    <p>Tramite Google AdMob, l'app può raccogliere automaticamente:</p>
+    <ul>
+      <li>Identificatore pubblicitario del dispositivo (IDFA)</li>
+      <li>Dati di utilizzo e interazione con gli annunci</li>
+      <li>Indirizzo IP (anonimizzato)</li>
+      <li>Identificativo univoco del dispositivo (UUID)</li>
+    </ul>
+
+    <div class="chip-row">
+      <span class="chip">Nome utente</span>
+      <span class="chip">IDFA</span>
+      <span class="chip">UUID dispositivo</span>
+      <span class="chip">Dati di utilizzo</span>
+    </div>
+  </section>
+
+  <!-- Archiviazione locale -->
+  <section>
+    <p class="section-label">Archiviazione</p>
+    <h2>Dove sono i tuoi dati</h2>
+    <p>myCashFlow è un'app <strong>completamente offline</strong>. I dati finanziari dell'utente risiedono esclusivamente nel dispositivo e non vengono mai inviati a server esterni, cloud o terze parti.</p>
+    <p>L'unica connessione a internet avviene per il caricamento degli annunci pubblicitari tramite Google AdMob e per la distribuzione dell'app tramite Apple App Store.</p>
+  </section>
+
+  <!-- Pubblicità AdMob -->
+  <section>
+    <p class="section-label">Pubblicità</p>
+    <h2>Google AdMob</h2>
+    <p>myCashFlow utilizza Google AdMob (Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA) per mostrare annunci pubblicitari che consentono di mantenere l'app gratuita.</p>
+
+    <h3>Come funziona</h3>
+    <p>All'avvio dell'app viene mostrato un modulo di consenso ufficiale Google (UMP — User Messaging Platform). L'utente può scegliere di:</p>
+    <ul>
+      <li><strong>Accettare gli annunci personalizzati</strong> — AdMob usa l'IDFA per mostrare annunci basati sugli interessi</li>
+      <li><strong>Rifiutare gli annunci personalizzati</strong> — vengono mostrati annunci generici non profilati</li>
+    </ul>
+    <p>In entrambi i casi l'app è pienamente utilizzabile.</p>
+
+    <h3>Base giuridica</h3>
+    <p>Il trattamento dei dati pubblicitari avviene sulla base del consenso esplicito dell'utente (Art. 6 par. 1 lett. a GDPR), raccolto tramite il modulo di consenso al primo avvio.</p>
+
+    <h3>Come revocare il consenso</h3>
+    <p>In qualsiasi momento tramite:</p>
+    <ul>
+      <li><strong>Nell'app</strong> → Impostazioni → Pubblicità → Gestisci preferenze annunci</li>
+      <li><strong>iOS</strong> → Impostazioni → Privacy e sicurezza → Tracciamento → disattiva myCashFlow</li>
+    </ul>
+
+    <h3>Trasferimento dati extra-UE</h3>
+    <p>Google LLC è certificata nell'ambito del Data Privacy Framework EU-USA. Per ulteriori informazioni: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></p>
+  </section>
+
+  <!-- Notifiche -->
+  <section>
+    <p class="section-label">Notifiche</p>
+    <h2>Notifiche push</h2>
+    <p>Con il consenso dell'utente, myCashFlow può inviare notifiche locali per:</p>
+    <ul>
+      <li>Promemoria giornaliero di registrazione spese (ore 20:00)</li>
+      <li>Preavviso scadenze di spesa ricorrente</li>
+    </ul>
+    <p>Le notifiche sono generate e gestite localmente dal dispositivo. Nessun dato viene inviato a server esterni per l'invio delle notifiche.</p>
+    <p>Per disattivarle: <strong>Impostazioni iOS → Notifiche → myCashFlow</strong></p>
+  </section>
+
+  <!-- Distribuzione -->
+  <section>
+    <p class="section-label">Distribuzione</p>
+    <h2>Apple App Store</h2>
+    <p>L'app è distribuita tramite Apple App Store (Apple Inc., One Apple Park Way, Cupertino, CA 95014, USA). Apple raccoglie dati di utilizzo relativi al download e all'installazione dell'app secondo la propria privacy policy: <a href="https://www.apple.com/legal/privacy/it/" target="_blank">apple.com/legal/privacy</a></p>
+  </section>
+
+  <!-- Diritti GDPR -->
+  <section>
+    <p class="section-label">I tuoi diritti — GDPR Art. 15–22</p>
+    <h2>Cosa puoi chiederci</h2>
+    <div class="rights-grid">
+      <div class="right-item">
+        <div class="right-dot"></div>
+        <p><strong>Accesso</strong> — ottenere informazioni sui dati trattati e riceverne una copia</p>
+      </div>
+      <div class="right-item">
+        <div class="right-dot"></div>
+        <p><strong>Rettifica</strong> — correggere dati inesatti o incompleti</p>
+      </div>
+      <div class="right-item">
+        <div class="right-dot"></div>
+        <p><strong>Cancellazione</strong> — richiedere la rimozione dei propri dati (diritto all'oblio)</p>
+      </div>
+      <div class="right-item">
+        <div class="right-dot"></div>
+        <p><strong>Limitazione</strong> — limitare il trattamento dei propri dati</p>
+      </div>
+      <div class="right-item">
+        <div class="right-dot"></div>
+        <p><strong>Portabilità</strong> — ricevere i dati in formato strutturato e leggibile</p>
+      </div>
+      <div class="right-item">
+        <div class="right-dot"></div>
+        <p><strong>Opposizione</strong> — opporsi al trattamento, incluso il marketing diretto</p>
+      </div>
+      <div class="right-item">
+        <div class="right-dot"></div>
+        <p><strong>Revoca consenso</strong> — revocare il consenso in qualsiasi momento senza pregiudizio</p>
+      </div>
+      <div class="right-item">
+        <div class="right-dot"></div>
+        <p><strong>Reclamo</strong> — proporre reclamo al Garante Privacy italiano (<a href="https://www.garanteprivacy.it" target="_blank">garanteprivacy.it</a>)</p>
+      </div>
+    </div>
+    <p style="margin-top: 16px; font-size: 14px; color: var(--muted);">Per esercitare i tuoi diritti contattaci a <a href="mailto:infomycashflow@gmail.com">infomycashflow@gmail.com</a>. Risponderemo entro 30 giorni.</p>
+  </section>
+
+  <!-- Periodo di conservazione -->
+  <section>
+    <p class="section-label">Conservazione</p>
+    <h2>Per quanto tempo</h2>
+    <p>I dati finanziari locali sono conservati sul dispositivo fino alla disinstallazione dell'app da parte dell'utente.</p>
+    <p>I dati trattati da Google AdMob sono soggetti alla politica di conservazione di Google. Il consenso pubblicitario può essere revocato in qualsiasi momento come indicato nella sezione Pubblicità.</p>
+  </section>
+
+  <!-- Modifiche -->
+  <section>
+    <p class="section-label">Aggiornamenti</p>
+    <h2>Modifiche a questa policy</h2>
+    <p>Il Titolare si riserva il diritto di aggiornare questa privacy policy. Le modifiche saranno comunicate aggiornando la data in cima al documento. In caso di modifiche sostanziali al trattamento dei dati, verrà raccolta nuovamente la conferma dell'utente ove richiesto dalla legge.</p>
+    <p>Si consiglia di consultare periodicamente questa pagina.</p>
+  </section>
+
+</div>
+
+<footer>
+  <p>myCashFlow · Alessandro Radice · <a href="mailto:infomycashflow@gmail.com">infomycashflow@gmail.com</a></p>
+  <p style="margin-top: 6px;">Questa privacy policy è conforme al Regolamento UE 2016/679 (GDPR) e al D.Lgs. 196/2003 come modificato dal D.Lgs. 101/2018.</p>
+</footer>
+
+</body>
+</html>
